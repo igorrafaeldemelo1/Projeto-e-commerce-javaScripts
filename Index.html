@@ -1,0 +1,799 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--style CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce</title>
+</head>
+
+<body>
+    <div class="menu 
+    col-4 mt-4" onclick="menu()" style="width:40px ; position: fixed; top: 10px; left: 30px; z-index: 3;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list text-muted"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+
+    </div>
+    <div class="login
+     row m-auto ">
+        <div class="col-11 col-md-4 mt-3  bg-white m-auto  rounded-4 shadow">
+            <div class=" p-5 pb-4 border-bottom-0 row" style="display:flex ;">
+                <!-- <h5 class="modal-title">Modal title</h5> -->
+                <h2 class="fw-bold mb-0 col-9">Login</h2>
+                <button onclick="fechar01()" type="button" class="btn-close col-1 float-end" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+                <form class="">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword"
+                            placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" onclick="login()">Sign
+                        up</button>
+                    <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                    <hr class="my-4">
+                    <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                        Sign up with Twitter
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                        Sign up with Facebook
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#github"></use>
+                        </svg>
+                        Sign up with GitHub
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="registro
+     row m-auto ">
+        <div class="col-11 col-md-4 mt-2  bg-white m-auto  rounded-4 shadow">
+            <div class=" p-5 pb-4 border-bottom-0 row" style="display:flex ;">
+                <!-- <h5 class="modal-title">Modal title</h5> -->
+                <h2 class="fw-bold mb-0 col-9">registro</h2>
+                <button onclick="fechar()" type="button" class="btn-close col-1 float-end" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+                <form class="">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword"
+                            placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword"
+                            placeholder="Password">
+                        <label for="floatingPassword">Confirme Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit"
+                        onclick="registra()">Confirm</button>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="menu-bar
+     row">
+
+        <div class="box-09 col-4 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4" _msthash="707577" _msttexthash="202592">Barra lateral</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+
+                <li class="mb-1 __web-inspector-hide-shortcut__">
+                    <button
+                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 text-white collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false"
+                        _msthash="1079364" _msttexthash="75244"> Casa </button>
+                    <div class="collapse" id="home-collapse" _msthidden="4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" _msthidden="4">
+                            <li _msthidden="1"><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="897819" _msttexthash="118079" _msthidden="1">Overvie</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none  text-white rounded"
+                                    _msthash="898001" _msttexthash="78468" _msthidden="1">Weekly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898183" _msttexthash="98670" _msthidden="1">Monthly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898365" _msttexthash="116428" _msthidden="1">Annually</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1 __web-inspector-hide-shortcut__">
+                    <button
+                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 text-white collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"
+                        _msthash="1079364" _msttexthash="75244"> Eletronicos </button>
+                    <div class="collapse" id="orders-collapse" _msthidden="4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" _msthidden="4">
+                            <li _msthidden="1"><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="897819" _msttexthash="118079" _msthidden="1">Overvie</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none  text-white rounded"
+                                    _msthash="898001" _msttexthash="78468" _msthidden="1">Weekly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898183" _msttexthash="98670" _msthidden="1">Monthly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898365" _msttexthash="116428" _msthidden="1">Annually</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1 __web-inspector-hide-shortcut__">
+                    <button
+                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 text-white collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false"
+                        _msthash="1079364" _msttexthash="75244"> Ferragem </button>
+                    <div class="collapse" id="account-collapse" _msthidden="4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" _msthidden="4">
+                            <li _msthidden="1"><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="897819" _msttexthash="118079" _msthidden="1">Overvie</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none  text-white rounded"
+                                    _msthash="898001" _msttexthash="78468" _msthidden="1">Weekly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898183" _msttexthash="98670" _msthidden="1">Monthly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898365" _msttexthash="116428" _msthidden="1">Annually</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1 __web-inspector-hide-shortcut__">
+                    <button
+                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 text-white collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false"
+                        _msthash="1079364" _msttexthash="75244"> Jardinage </button>
+                    <div class="collapse" id="dashboard-collapse" _msthidden="4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" _msthidden="4">
+                            <li _msthidden="1"><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="897819" _msttexthash="118079" _msthidden="1">Overvie</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none  text-white rounded"
+                                    _msthash="898001" _msttexthash="78468" _msthidden="1">Weekly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898183" _msttexthash="98670" _msthidden="1">Monthly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898365" _msttexthash="116428" _msthidden="1">Annually</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1 __web-inspector-hide-shortcut__">
+                    <button
+                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 text-white collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#size-collapse" aria-expanded="false"
+                        _msthash="1079364" _msttexthash="75244"> Alimentos </button>
+                    <div class="collapse" id="size-collapse" _msthidden="4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" _msthidden="4">
+                            <li _msthidden="1"><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="897819" _msttexthash="118079" _msthidden="1">Overview</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none  text-white rounded"
+                                    _msthash="898001" _msttexthash="78468" _msthidden="1">Weekly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898183" _msttexthash="98670" _msthidden="1">Monthly</a></li>
+                            <li _msthidden="1"><a href="#" class="link-dark d-inline-flex text-decoration-none text-white rounded"
+                                    _msthash="898365" _msttexthash="116428" _msthidden="1">Annually</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+
+            </ul>
+            <hr>
+            <div class=" dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong _msthash="1075477" _msttexthash="33306">Name-personal</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" _msthidden="4">
+                    <li _msthidden="1"><a class="dropdown-item" href="#" _msthash="1115374" _msttexthash="191724"
+                            _msthidden="1">Carinho </a></li>
+                    <li _msthidden="1"><a class="dropdown-item" href="#" _msthash="1115556" _msttexthash="117221"
+                            _msthidden="1">finalizar compra</a></li>
+                    <li _msthidden="1"><a class="dropdown-item" href="#" _msthash="1115738" _msttexthash="94315"
+                            _msthidden="1">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li _msthidden="1"><a class="dropdown-item" href="#" _msthash="1116102" _msttexthash="98553"
+                            _msthidden="1">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div onclick="closes()" class="col-4 " style="width:30px; margin-top: 30px ; margin-left: 30px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                class="bi bi-x-lg text-muted" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+
+        </div>
+
+    </div>
+    <section id="Cabecalho">
+        <div class="bg-dark bg gradiente">
+            <header class="py-3 mb-4 border-bottom">
+                <div class="container d-flex flex-wrap justify-content-center">
+                    <a href="/"
+                        class="d-flex  mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                        
+                        <span class="fs-4 text-white m-auto" _msthash="1168128" _msttexthash="276172"><p>Logo</p></span>
+                    </a>
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                        <input type="search" class="form-control" placeholder="Procurar..." aria-label="Procurar"
+                            _mstplaceholder="145353" _mstaria-label="116649">
+                    </form>
+                    <div class="mx-5"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi text-white bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>    </div>
+                </div>
+            </header>
+            <nav class="py-2 bg-light border-bottom">
+                <div class="container d-flex flex-wrap">
+                    <ul class="nav me-auto">
+                        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page"
+                                _msthash="1151397" _msttexthash="42250">Casa</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-dark px-2" _msthash="1151579"
+                                _msttexthash="313612">Características</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-dark px-2" _msthash="1151761"
+                                _msttexthash="253617">Precificação</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-dark px-2" _msthash="1151943"
+                                _msttexthash="429065">Perguntas frequentes</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-dark px-2" _msthash="1152125"
+                                _msttexthash="59826">Sobre</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 " onclick="login()">login</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 "
+                                onclick="registro()">Registro</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="Carrosel-banner">
+        <div id="myCarousel" class="carousel slide container h-50 mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"
+                    _mstaria-label="66157"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    _mstaria-label="66313" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    _mstaria-label="66469"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 _msthash="1218594" _msttexthash="389831">Manchete do Estadão.</h1>
+                            <p _msthash="1171443" _msttexthash="4515862">Algum conteúdo de espaço reservado
+                                representativo para o primeiro slide do carrossel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" _msthash="1380561"
+                                    _msttexthash="275964">Inscreva-se hoje</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active" _mstvisible="0">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" _mstVisible="1">
+                        <rect width="100%" height="100%" fill="#777" _mstVisible="2"></rect>
+                    </svg>
+
+                    <div class="container" _mstvisible="1">
+                        <div class="carousel-caption" _mstvisible="2">
+                            <h1 _msthash="1218958" _msttexthash="547430" _mstvisible="3">Outro exemplo de manchete.</h1>
+                            <p _msthash="1171794" _msttexthash="4399889" _mstvisible="3">Algum conteúdo de espaço
+                                reservado representativo para o segundo slide do carrossel.</p>
+                            <p _mstvisible="3"><a class="btn btn-lg btn-primary" href="#" _msthash="1380964"
+                                    _msttexthash="126477" _mstvisible="4">Saiba Mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" _msthidden="3">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+
+                    <div class="container" _msthidden="3">
+                        <div class="carousel-caption text-end" _msthidden="3">
+                            <h1 _msthash="1219322" _msttexthash="513695" _msthidden="1">One more for good measure.</h1>
+                            <p _msthash="1172145" _msttexthash="3687710" _msthidden="1">Some representative placeholder
+                                content for the third slide of this carousel.</p>
+                            <p _msthidden="1"><a class="btn btn-lg btn-primary" href="#" _msthash="1381367"
+                                    _msttexthash="235989" _msthidden="1">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden" _msthash="654316" _msttexthash="116246">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden" _msthash="654589" _msttexthash="113945">Próximo</span>
+            </button>
+        </div>
+        <div class="position-relative overflow-hidden  p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal" _msthash="706186" _msttexthash="285818">Manchete de Punny</h1>
+                <p class="lead fw-normal" _msthash="671424" _msttexthash="12236237">E uma subposição ainda mais
+                    espirituosa para arrancar. Inicie seus esforços de marketing com este exemplo com base nas páginas
+                    de marketing da Apple.</p>
+                <a class="btn btn-outline-secondary" href="#" _msthash="670176" _msttexthash="93821">Em breve</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+    </section>
+    <section id="Protudos-promocao">
+        <div id="carouselExampleControls" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="text-center my-5 ">
+                <p class="tw-bold fs-4">Ofertas</p>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row container m-auto">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 m-auto">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 float-end">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row container m-auto">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 m-auto">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 float-end">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row container m-auto">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 m-auto">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 float-end">
+                            <div class="card p-3" style="width: 18rem;">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">item</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Link do card</a>
+                                    <a href="#" class="card-link">Outro link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+    <section id="banner-secao">
+        <div class="d-md-flex flex-md-equal h-50 h-auto ps-md-3 ">
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5" _msthash="969761" _msttexthash="230386">Outra manchete</h2>
+                    <p class="lead" _msthash="928226" _msttexthash="1201993">E uma subposição ainda mais espirituosa.
+                    </p>
+                </div>
+                <div class="bg-light shadow-sm mx-auto"
+                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <h2 class="display-5" _msthash="970047" _msttexthash="230386">Outra manchete</h2>
+                    <p class="lead" _msthash="928499" _msttexthash="1201993">E uma subposição ainda mais espirituosa.
+                    </p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5" _msthash="969761" _msttexthash="230386">Outra manchete</h2>
+                    <p class="lead" _msthash="928226" _msttexthash="1201993">E uma subposição ainda mais espirituosa.
+                    </p>
+                </div>
+                <div class="bg-light shadow-sm mx-auto"
+                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+        </div>
+        <div class="text-center my-5 ">
+            <p class="tw-bold fs-4">Seção</p>
+        </div>
+        <div class="container my-5 row m-auto">
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>Eletronicos
+
+                </p>
+            </div>
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>Casa
+
+                </p>
+            </div>
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>ferragem
+
+                </p>
+            </div>
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>Alimentos
+
+                </p>
+            </div>
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>Jardinagem 
+
+                </p>
+            </div>
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>Description
+
+                </p>
+            </div>
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>Description
+
+                </p>
+            </div>
+            <div class="col">
+                <img style="background-size: cover;" src="img/baixados.webp" class="img-thumbnail" alt="...">
+                <p>Description
+
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
+    <section id="footer">
+        <div class="row align-items-md-stretch container m-auto mt-5">
+            <div class="col-md-6 ">
+                <div class="h-100 p-5 text-bg-dark rounded-3">
+                    <h2 _msthash="1272635" _msttexthash="455715">Alterar o plano de fundo</h2>
+                    <p _msthash="1224444" _msttexthash="18044923">Troque o utilitário de cor de fundo e adicione um
+                        utilitário de cor '.text-*' para misturar o visual jumbotron. Em seguida, misture e combine com
+                        outros temas de componentes e muito mais.</p>
+                    <button class="btn btn-outline-light" type="button" _msthash="1516450" _msttexthash="277797">Botão
+                        de exemplo</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2 _msthash="1272921" _msttexthash="421317">Adicionar fronteiras</h2>
+                    <p _msthash="1224717" _msttexthash="34008117">Ou, mantenha-o leve e adicione uma borda para alguma
+                        definição adicional aos limites do seu conteúdo. Certifique-se de olhar sob o capô na fonte HTML
+                        aqui como ajustamos o alinhamento e o dimensionamento de ambos os conteúdos da coluna para a
+                        altura igual.</p>
+                    <button class="btn btn-outline-secondary" type="button" _msthash="1516788"
+                        _msttexthash="277797">Botão de exemplo</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 bg-dark mt-5  ">
+            <footer class="pt-md-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 ">
+                        <h5 class="text-white" _msthash="1118078" _msttexthash="109447">Secção</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617278"
+                                    _msttexthash="42250">Casa</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617460"
+                                    _msttexthash="313612">Características</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617642"
+                                    _msttexthash="253617">Precificação</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617824"
+                                    _msttexthash="429065">Perguntas frequentes</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1618006"
+                                    _msttexthash="59826">Sobre</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="text-white" _msthash="1118286" _msttexthash="109447">Secção</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617603"
+                                    _msttexthash="42250">Casa</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617785"
+                                    _msttexthash="313612">Características</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617967"
+                                    _msttexthash="253617">Precificação</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1618149"
+                                    _msttexthash="429065">Perguntas frequentes</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1618331"
+                                    _msttexthash="59826">Sobre</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="text-white" _msthash="1118494" _msttexthash="109447">Secção</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1617928"
+                                    _msttexthash="42250">Casa</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1618110"
+                                    _msttexthash="313612">Características</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1618292"
+                                    _msttexthash="253617">Precificação</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1618474"
+                                    _msttexthash="429065">Perguntas frequentes</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" _msthash="1618656"
+                                    _msttexthash="59826">Sobre</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5 class="text-white" _msthash="1506609" _msttexthash="505193">Assine nossa newsletter</h5>
+                            <p class="text-white" _msthash="1452958" _msttexthash="1781546">Digestão mensal do que há de
+                                novo e excitante de nós.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden" _msthash="2092948"
+                                    _msttexthash="441363">Endereço eletrônico</label>
+                                <input id="newsletter1" type="text" class="form-control"
+                                    placeholder="Endereço eletrônico" _mstplaceholder="441363">
+                                <button class="btn btn-primary" type="button" _msthash="2171975"
+                                    _msttexthash="160030">Subscrever</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4  border-top">
+                    <p class="text-white" _msthash="794300" _msttexthash="1582282">© 2022 Company, Inc. Todos os
+                        direitos reservados.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/javaS.js"></script>
+</body>
+
+</html>

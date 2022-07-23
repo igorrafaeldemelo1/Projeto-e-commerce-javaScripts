@@ -1,0 +1,52 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0.63);
+    z-index: 10;
+    animation: box-01;
+    animation-duration: 800ms;
+
+}
+
+.registro{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0.63);
+    z-index: 10;
+    animation: box-01;
+    animation-duration: 800ms;
+
+}
+
+@keyframes box-01 {
+    from{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+.menu-bar{
+    position: fixed;
+    display: none;
+
+    cursor: pointer;
+    z-index: 3;
+   
+    animation: box-02;
+    animation-duration: 200ms;
+
+}
+@keyframes box-02 {
+    from{
+        left: -280px;
+    }
+    to{
+        left: 0;
+    }
+}
+
